@@ -1,0 +1,21 @@
+{
+  "name": "skynet-memory",
+  "version": "0.1.0",
+  "description": "Always-On Memory System for SKYNET/MOTHER — Supabase + pgvector + Claude Haiku",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/ingest-agent/index.mjs",
+    "ingest": "node scripts/ingest-agent/index.mjs",
+    "consolidate": "node scripts/consolidate-agent/index.mjs",
+    "query": "node scripts/query-agent/index.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "openai": "^4.28.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "author": "SKYNET Cyberdin Systems",
+  "license": "MIT"
+}
